@@ -5,11 +5,11 @@ const Item = new Schema({
     type: String,
     unique: true,
     required: true
-  }
+  },
   isDone: {
     type: Boolean,
     require: true
   }
-})
+}, {timestamps: true})
 
 module.exports = model('Item', Item)
